@@ -4,12 +4,21 @@
  * Declare a variable called myFavoriteSong on one line and console.log the value
  * Then, using your Literals, console.log "my favorite song is..." with the song's value
  */
-
+const myFavoriteSong = "Summer Breeze"
+console.log(myFavoriteSong)
 /*
  * Prompt 2:
  *
  * Declare 3 variables using each of let, const, and var, then console.log each of them
  */
+const favoriteFood = "Pizza"
+let age = 30
+var weight = 240
+
+console.log(favoriteFood, age, weight)
+
+
+
 
 /*
  * Prompt 3:
@@ -21,6 +30,15 @@
  *   - divide your variable by 7
  *   - calculate the remainder of dividing your variable by 2
  */
+let variable = 5
+
+console.log(++ variable)
+console.log(-- variable)
+console.log(3 * variable)
+console.log(variable / 7)
+console.log(variable % 2)
+
+
 
 /*
  * Prompt 4:
@@ -34,6 +52,10 @@
  * Run a console.log that says 'hello my name is..." with your fullName. 
  */
 
+const firstName = "Bryan"
+const lastName = "Velez"
+const fullName = `${firstName} ${lastName}`
+console.log(`hello my name is ${fullName}` )
 
 /* Arrays */
 
@@ -55,6 +77,11 @@ let array3 = [
   ['Marty Stuart', ['Marty Janetty', ['Marty McFly'], 'Marty Robbins']]
 ];
 
+console.log(array1[2])
+console.log(array2[1][1])
+console.log(array3[1][1][1][0])
+
+
 /*
  * Prompt 2:
  *
@@ -62,6 +89,8 @@ let array3 = [
  */
 
 let array4 = ['a', 'b', 'c', 'd', 'e'];
+
+console.log(array4[array4.length - 2])
 
 /*
  * Prompt 3:
@@ -77,9 +106,19 @@ let cathleen = ['Cathleen', 186, 'New York'];
 // Cathleen decides that Thom can't be named "Thom" anymore. Remove "Thom" from
 // the thom array and replace it with "Tom".
 
+thom[0] = "Tom"
+
 // Karolin just had her birthday; change Karolin's array to reflect her being
 // a year older.
+ 
+karolin[1] = 17
 
 // Change Cathleen's hometown from New York to "Gotham City".
 
+cathleen[2] = "Gotham City"
+
 // Remove "Pittsburgh" from Kristyn's array and add "Oakland".
+
+kristyn.pop(2)
+
+console.log(thom,karolin,cathleen,kristyn)
